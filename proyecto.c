@@ -8,15 +8,18 @@ int main() {
   int seguir = 0;
   char prueba;
   int respuesta;
+  char nombre[20];
+  FILE* tablaPuntuacion;
 
-  printf("\n\n\t Bienvenido a ¿Eres más listo que un niño de quinto grado?\n\n");
+  tablaPuntuacion = fopen("./scores.txt", "w");
+
+  printf("\n\n\t Bienvenido al juego Trivia Crack Ultimate 3000 Máquina\n\n");
   printf("Las preguntas se desplegarán una por una, digite el número de la "
   "respuesta ha seleccionar, cada respuesta correcta son +10 puntos\n");
 
-  while (seguir == 0)
-  {
+  while (seguir == 0) {
     score = 0;
-    printf("Seleccione el número de la opción deseada: \n");
+    printf("\n\nSeleccione el número de la opción deseada: \n");
     printf("1. Empezar\n");
     printf("2. Tabla de puntuaciones\n");
     printf("3. Salir\n");
@@ -25,7 +28,10 @@ int main() {
 
     if (menu == 1){
 
-      printf("\t Seleccione la categoria en la que quiere participar: \n");
+      printf("\t Ingrese su nombre: \n");
+      scanf(" %s", nombre);
+
+      printf("\n\t Seleccione la categoria en la que quiere participar: \n\n");
       printf("1. Ciencia y tecnología\n");
       printf("2. Anime\n");
       printf("3. Historia\n");
@@ -112,10 +118,8 @@ int main() {
         } else {
           printf("Respuesta incorrecta\n");
         }
-
-// **************** FINAL *****************************************************
-        printf("\n\n\n\t\t\t Tu score es: %d \n\n\n\n", score);
       }//fin del else if 1
+
       else if (categoria == 2){
 
         // ************** Pregunta 1 *************************
@@ -149,11 +153,8 @@ int main() {
         } else {
           printf("Respuesta incorrecta\n");
         }
-
-        // **************** FINAL *****************************************************
-        printf("\n\n\n\t\t\t Tu score es: %d \n\n\n\n", score);
-
       }//fin del else if 2
+
       else if (categoria == 3){
 
         // ************** Pregunta 1 *************************
@@ -232,10 +233,8 @@ int main() {
         } else {
           printf("Respuesta incorrecta\n");
         }
-        // **************** FINAL *****************************************************
-        printf("\n\n\n\t\t\t Tu score es: %d \n\n\n\n", score);
-
       }// fin else if 3
+
       else if (categoria == 4){
         // ************** Pregunta 1 *************************
 
@@ -312,19 +311,41 @@ int main() {
         } else {
           printf("Respuesta incorrecta\n");
         }
-        // **************** FINAL *****************************************************
-        printf("\n\n\n\t\t\t Tu score es: %d \n\n\n\n", score);
-
       }// fin del else if 4
+
+      // **************** FINAL *****************************************************
+      tablaPuntuacion = fopen("./scores.txt", "a");
+      fprintf(tablaPuntuacion, "%s\t\t\t%d\n", nombre, score);
+      fclose(tablaPuntuacion);
+
+      printf("\n\n\n\t\t\t %s, tu score es: %d \n\n\n\n", nombre, score);
 
     }// fin if menu = 1
 
     else if (menu == 2){
-      printf("Puntuaciones: \n\n");
+
+      tablaPuntuacion = fopen("./scores.txt", "r");
+
+      printf("\n\n\t Puntuaciones: \n\n");
+
+      do {
+        int linea_leida = fgetc(tablaPuntuacion);
+        if (linea_leida != EOF){
+          printf("%c", (char) linea_leida);
+        } else {
+          printf("\n\t == FIN ==\n");
+        }
+      } while(!feof(tablaPuntuacion));
+
+      fclose(tablaPuntuacion);
     }
+
     else if (menu == 3){
       seguir = 1;
     }
+
+
+
 
   } // Fin del ciclo while principal
 } // fin del main
