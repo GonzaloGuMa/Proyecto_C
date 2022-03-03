@@ -428,6 +428,5 @@ int main() {
       seguir = 1;
     }
 
-
   } // Fin del ciclo while principal
 } // fin del main
