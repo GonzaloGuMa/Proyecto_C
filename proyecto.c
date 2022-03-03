@@ -42,8 +42,9 @@ int main() {
       if (categoria == 1){
 
         // ************** Pregunta 1 *************************
-
-        printf("\t ¿Cuál de las sisguientes enfermedades ataca al higado? \n\n");
+        printf("\t________________________________________________________\n\n");
+        printf("\t ¿Cuál de las siguientes enfermedades ataca al higado? \n");
+        printf("\t________________________________________________________\n\n");
         printf("1. Hepatitis");
         printf("\t 2. Diabetes\n");
         printf("3. Artrósis");
@@ -59,7 +60,9 @@ int main() {
 
         // ************** Pregunta 2 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿Cuántas caras tiene un icosaedro? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. 16");
         printf("\t 2. 20\n");
         printf("3. 8");
@@ -75,7 +78,9 @@ int main() {
 
         // ************** Pregunta 3 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t  ¿Con que parte del cuerpo hacen el zumbido las abejas? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. Con las patas");
         printf("\t 2. Con la boca\n");
         printf("3. Con las alas");
@@ -89,8 +94,9 @@ int main() {
           printf("Respuesta incorrecta\n");
         }
         // ************** Pregunta 4 *************************
-
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿Qué estudia la icitología? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. Los insectos");
         printf("\t 2. Las erupciones cutáneas\n");
         printf("3. Las rocas");
@@ -105,7 +111,9 @@ int main() {
         }
         // ************** Pregunta 5 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿Qué tipo de mamífero es un conejo? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. Roedor");
         printf("\t 2. Lagomorfo\n");
         printf("3. Marsupial");
@@ -124,7 +132,9 @@ int main() {
 
         // ************** Pregunta 1 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿Cuál es el nombre japonés de Ash Ketchum? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. Yuji");
         printf("\t\t 2. Shinji\n");
         printf("3. Kazuha");
@@ -140,7 +150,9 @@ int main() {
 
         // ************** Pregunta 2 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿Cuál de estos no es un villano de Dragon Ball Z? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. Cell");
         printf("\t\t 2. Freezer\n");
         printf("3. Mr. Satan");
@@ -155,7 +167,9 @@ int main() {
         }
         // ************** Pregunta 3 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿En Death Note como se llaman los sucesores de L? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. Gon y Killua");
         printf("\t\t 2. Near y Mello\n");
         printf("3. Zoro y Sanji");
@@ -170,7 +184,9 @@ int main() {
         }
         // ************** Pregunta 4 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿En Jujutsu Kaisen que parte del cuerpo de la maldición Sukuna se come Itadori? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. Un dedo");
         printf("\t\t 2. Una oreja\n");
         printf("3. Un mechón de pelo");
@@ -185,7 +201,9 @@ int main() {
         }
         // ************** Pregunta 5 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("¿En cuál piso de Aincrad se revela la identidad del jefe final del juego en Sword Art Online? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. 80");
         printf("\t\t 2. 75\n");
         printf("3. 50");
@@ -205,7 +223,9 @@ int main() {
 
         // ************** Pregunta 1 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿Cuál fue el primer país en aprobar el sufragio de la mujer? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. Nueva Zelanda");
         printf("\t\t 2. España\n");
         printf("3. Dinamarca");
@@ -221,7 +241,9 @@ int main() {
 
         // ************** Pregunta 2 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿En qué año llegó el hombre a la Luna? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. 1982");
         printf("\t\t 2. 1957\n");
         printf("3. 1969");
@@ -236,7 +258,9 @@ int main() {
         }
         // ************** Pregunta 3 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿Qué suceso marca el final de la Edad Antigua y el inicio de la Edad Media? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. La caída del imperio romano de Occidente");
         printf("\t\t 2. La agricultura\n");
         printf("3. Uso del bronce");
@@ -251,7 +275,9 @@ int main() {
         }
         // ************** Pregunta 4 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿Qué carabela no regresó del primer viaje de Colón al Nuevo Mundo? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. La Niña");
         printf("\t\t 2. La Santa María\n");
         printf("3. La pinta");
@@ -266,7 +292,9 @@ int main() {
         }
         // ************** Pregunta 5 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿Cuál es la narración épica más antigua de la historia? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. Odisea");
         printf("\t\t 2. La Iliada\n");
         printf("3. Shahnameh");
@@ -284,7 +312,9 @@ int main() {
       else if (categoria == 4){
         // ************** Pregunta 1 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿Cómo se llama la protagonista de la saga Tomb Raider? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. Akira");
         printf("\t 2. Lara Croft\n");
         printf("3. Jean");
@@ -299,7 +329,9 @@ int main() {
         }
         // ************** Pregunta 2 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿Cual fue el juego de celular que recaudó más dinero en 2021? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. Epic Seven");
         printf("\t\t 2. Summoners War\n");
         printf("3. Clash of Clans");
@@ -314,7 +346,9 @@ int main() {
         }
         // ************** Pregunta 3 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿Cual es considerado el primer videojuego de la historia? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. Pong");
         printf("\t\t\t 2. Asteroids\n");
         printf("3. Tennis for two");
@@ -329,7 +363,9 @@ int main() {
         }
         // ************** Pregunta 4 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿Cual es la consola más vendida de la historia? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. Play Station 2");
         printf("\t\t 2. Game Boy\n");
         printf("3. Nintendo DS");
@@ -344,7 +380,9 @@ int main() {
         }
         // ************** Pregunta 5 *************************
 
+        printf("\t________________________________________________________\n\n");
         printf("\t ¿Cual es el juego más vendido de todos los tiempos? \n\n");
+        printf("\t________________________________________________________\n\n");
         printf("1. Minecraft");
         printf("\t\t 2. Pokemon Red\n");
         printf("3. GTA V");
@@ -363,7 +401,9 @@ int main() {
       tablaPuntuacion = fopen("./scores.txt", "a");
       fprintf(tablaPuntuacion, "%s\t\t\t%d\n", nombre, score);
       fclose(tablaPuntuacion);
+      printf("\t========================================================\n\n");
       printf("\n\n\n\t\t\t %s, tu score es: %d \n\n\n\n", nombre, score);
+      printf("\t========================================================\n\n");
     }// fin if menu = 1
 
     else if (menu == 2){
