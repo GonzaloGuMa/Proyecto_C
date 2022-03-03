@@ -153,6 +153,52 @@ int main() {
         } else {
           printf("Respuesta incorrecta\n");
         }
+        // ************** Pregunta 3 *************************
+
+        printf("\t ¿En Death Note como se llaman los sucesores de L? \n\n");
+        printf("1. Gon y Killua");
+        printf("\t\t 2. Near y Mello\n");
+        printf("3. Zoro y Sanji");
+        printf("\t\t 4. Ban y King\n");
+
+        scanf(" %d", &respuesta);
+
+        if (respuesta == 2){
+          score += 10;
+        } else {
+          printf("Respuesta incorrecta\n");
+        }
+        // ************** Pregunta 4 *************************
+
+        printf("\t ¿En Jujutsu Kaisen que parte del cuerpo de la maldición Sukuna se come Itadori? \n\n");
+        printf("1. Un dedo");
+        printf("\t\t 2. Una oreja\n");
+        printf("3. Un mechón de pelo");
+        printf("\t 4. Un diente\n");
+
+        scanf(" %d", &respuesta);
+
+        if (respuesta == 1){
+          score += 10;
+        } else {
+          printf("Respuesta incorrecta\n");
+        }
+        // ************** Pregunta 5 *************************
+
+        printf("¿En cuál piso de Aincrad se revela la identidad del jefe final del juego en Sword Art Online? \n\n");
+        printf("1. 80");
+        printf("\t\t 2. 75\n");
+        printf("3. 50");
+        printf("\t\t 4. 100\n");
+
+        scanf(" %d", &respuesta);
+
+        if (respuesta == 2){
+          score += 10;
+        } else {
+          printf("Respuesta incorrecta\n");
+        }
+
       }//fin del else if 2
 
       else if (categoria == 3){
@@ -317,9 +363,7 @@ int main() {
       tablaPuntuacion = fopen("./scores.txt", "a");
       fprintf(tablaPuntuacion, "%s\t\t\t%d\n", nombre, score);
       fclose(tablaPuntuacion);
-
       printf("\n\n\n\t\t\t %s, tu score es: %d \n\n\n\n", nombre, score);
-
     }// fin if menu = 1
 
     else if (menu == 2){
@@ -343,8 +387,6 @@ int main() {
     else if (menu == 3){
       seguir = 1;
     }
-
-
 
 
   } // Fin del ciclo while principal
